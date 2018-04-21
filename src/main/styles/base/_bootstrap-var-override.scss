@@ -38,7 +38,16 @@ $container-large-desktop: 1210px;
 $navbarHeight: 25px;
 
 /* Base Font */
-$sansFontFamily: 'Open Sans', sans-serif;
+$sansFontFamily: 'Barlow', sans-serif;
+
+$font-size-base:          15px !default;
+$font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~12px
+
+@media only screen and (min-width: $screen-lg) {
+    $font-size-base: 17px !default;
+}
+
 
 /* Carets for dropdowns */
 $caret-width-base: 5px;

@@ -81,3 +81,9 @@ h6,
     cursor: text;
   }
 }
+
+@media only screen and (min-width: $screen-md) {
+    body {
+        font-size: 17px;
+    }
+}

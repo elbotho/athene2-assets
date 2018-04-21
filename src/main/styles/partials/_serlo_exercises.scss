@@ -90,7 +90,7 @@
       .multiple-choice-submit {
         visibility: hidden;
         border: 0 none;
-        font-size: 14px;
+        font-size: $font-size-base;
       }
       .solution {
         display: inline-block;
@@ -144,7 +144,7 @@
       .input-challenge-submit {
         visibility: hidden;
         border: 0 none;
-        font-size: 14px;
+        font-size: $font-size-base;
       }
       .solution {
         display: inline-block;

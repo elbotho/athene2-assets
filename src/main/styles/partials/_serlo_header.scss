@@ -2,7 +2,7 @@
   font-size: 36px;
   height: 75px;
   line-height: 75px;
-  margin-top: 50px;
+  margin-top: 70px;
 
   @media (min-width: $navigationBreakPoint-min) {
     .authentification,
@@ -73,7 +73,7 @@
 
   .subject-title {
     display: inline-block;
-    margin-left: ($sidebarWidth + $sidebarGap);
+    margin-left: ($sidebarWidth + $sidebarGap + 20px);
     position: relative;
   }
 
@@ -152,7 +152,7 @@
   @include block-shadow($backgroundColor, 9px);
 
   .subject-nav-center {
-    @include block-shadow;
+    // @include block-shadow;
   }
 
   .subject-nav-center {
@@ -188,7 +188,7 @@
   }
 
   #subject-nav-wrapper {
-    background: $backgroundColor;
+    background: #fff;
   }
 
   #breadcrumbs {
@@ -263,7 +263,7 @@
     form {
       @include bottom-frame($serloBlue);
       @include block-shadow;
-      background: $backgroundColor;
+      background: #fff;
       top: 2px;
     }
 

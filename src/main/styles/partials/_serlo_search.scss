@@ -16,6 +16,11 @@
   }
 }
 
+body #subject-nav #search-content form {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
 #search-content {
   display: block;
   position: relative;

@@ -12,10 +12,9 @@
 #subject-nav > .subject-anchor > a,
 #main-nav > li > a {
   padding: 14px 12px 12px;
-  font-size: 14px;
+  font-size: $font-size-base;
   font-weight: bold;
-  color: white;
-  background: $gray;
+  background: $lighterGray;
 
   &:hover {
     background: $themeColor;
@@ -362,7 +361,7 @@
 
     > a {
       color: $serloGray;
-      font-size: 14px;
+      font-size: $font-size-base;
 
       &:hover {
         color: $themeColor;

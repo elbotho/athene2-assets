@@ -1,7 +1,12 @@
 /* Serlo Menu */
 /* top navbar */
 #serlo-menu {
-  @include block-shadow;
+  // @include block-shadow;
+
+    font-size: 15px;
+
+    border: 0;
+    min-height: auto;
 
   @media only screen and (max-width: $navigationBreakPoint-max) {
     display: none;
@@ -23,12 +28,13 @@
 
     & > li {
       > a.primary {
-        background-color: $themeColor;
-        color: $white;
+        // background-color: $themeColor;
+        background-color: transparent;
+        // color: $white;
         font-weight: 700;
 
         &:hover {
-          background-color: lighten($themeColor, 5%);
+          background-color: lighten($themeColor,5%);
         }
       }
 
@@ -39,7 +45,7 @@
 
       &:hover,
       &:active {
-        background-color: $themeColor;
+        background-color: lighten($themeColor,5%);
         & > a {
           color: $white;
         }
@@ -61,6 +67,10 @@
     }
   }
 
+
+.nav.navbar-nav > li > a {
+  line-height: 17px;
+}
   .navbar-nav {
     //float: left;
     //margin: 0;

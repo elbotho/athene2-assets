@@ -7,6 +7,8 @@
   margin: 0 auto;
   position: relative;
 
+  background-color: #fff;
+
   @media only screen and (max-width: $navigationBreakPoint-max) {
     padding: 0 $pagePaddingMedium;
   }
@@ -234,6 +236,37 @@
       display: none;
     }
   }
+}
+
+@media only screen and (min-width: $screen-lg) {
+    .container {
+        width: auto;
+        max-width: 1700px;
+        padding: 0;
+    }
+
+    #header .container{
+        background-color: #0a7ec2;
+        color: #fff;
+    }
+
+    #header .serlo-logo {
+        color: #fff;
+    }
+
+    #header-nav .subject-title {
+        opacity: 0.6;
+    }
+
+    #subject-nav .backlink-only .subject-nav-center {
+        width: auto !important;
+    }
+
+    #subject-nav .backlink-only #search-content {
+        width: 200px !important;
+    }
+
+
 }
 
 .page-header {
