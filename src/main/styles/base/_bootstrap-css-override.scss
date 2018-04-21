@@ -17,8 +17,10 @@
   padding: inherit;
 }
 
-.btn {
-    font-size: 17px;
+@media only screen and (min-width: $screen-lg) {
+    .btn {
+        font-size: 17px;
+    }
 }
 
 .btn-group > form {

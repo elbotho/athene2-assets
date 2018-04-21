@@ -247,10 +247,9 @@
 
     #header .container{
         background-color: #0a7ec2;
-        color: #fff;
     }
 
-    #header .serlo-logo {
+    #header .serlo-logo, #header-nav {
         color: #fff;
     }
 
@@ -261,11 +260,6 @@
     #subject-nav .backlink-only .subject-nav-center {
         width: auto !important;
     }
-
-    #subject-nav .backlink-only #search-content {
-        width: 200px !important;
-    }
-
 
 }
 

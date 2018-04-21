@@ -149,7 +149,7 @@
   padding: 0;
   clear: both;
 
-  @include block-shadow($backgroundColor, 9px);
+  @include block-shadow($backgroundColor, 8px);
 
   .subject-nav-center {
     // @include block-shadow;
@@ -238,14 +238,6 @@
         }
       }
     }
-
-    #search-content {
-      width: 100%;
-      @media screen and (max-width: $screen-sm) {
-        padding-right: 52px;
-        width: 30%;
-      }
-    }
   }
 
   .backlink-only.has-no-backlink {
@@ -260,20 +252,30 @@
   }
 
   #search-content {
-    form {
-      @include bottom-frame($serloBlue);
-      @include block-shadow;
-      background: #fff;
-      top: 2px;
-    }
 
     background: transparent;
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
-    width: $sidebarWidth;
+    width: 100%;
     margin-left: $sidebarGap;
+
+    @media screen and (min-width: 768px) {
+        width: 28.5%;
+    }
+
+    @media only screen and (min-width: $screen-lg) {
+        width: 193px;
+        margin-right:7px;
+    }
+
+    form {
+      @include bottom-frame($serloBlue);
+      @include block-shadow;
+      background: #fff;
+      top: 2px;
+    }
 
     input {
       padding-right: 0;
@@ -286,4 +288,18 @@
       color: $black;
     }
   }
+
+// @media only screen and (min-width: $screen-lg) {
+//         #subject-nav .backlink-only #search-content {
+//         width: 200px !important;
+//     }
+    // width: $sidebarWidth;
+
+    // #search-content {
+    //   width: 100%;
+    //
+    //     width: 30%;
+    //   }
+    // }
+
 }
